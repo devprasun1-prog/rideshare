@@ -1,0 +1,283 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #4f46e5;
+}
+
+/* =========================
+   HERO SECTION (Index)
+========================= */
+.hero {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn-group a {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary,
+.submit-btn {
+    background: #4f46e5;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover,
+.submit-btn:hover {
+    background: #3730a3;
+}
+
+.btn-secondary {
+    background: white;
+    color: #4f46e5;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #4f46e5;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #4f46e5;
+    color: white;
+}
+
+/* =========================
+   SECTION CONTAINER
+========================= */
+section {
+    padding: 60px 8%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.support-subtext,
+.last-updated {
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item h4 {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   PROFILE PAGE
+========================= */
+.profile-card {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.profile-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TERMS PAGE
+========================= */
+.terms-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.terms-content h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+/* =========================
+   ALERT BOX
+========================= */
+.safety-alert {
+    padding: 30px 8%;
+    background: #fee2e2;
+}
+
+.alert-box {
+    max-width: 900px;
+    margin: auto;
+    background: #fca5a5;
+    padding: 20px;
+    border-radius: 6px;
+    color: #7f1d1d;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+
+    .navbar nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .terms-container {
+        padding: 20px;
+    }
+}

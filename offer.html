@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>RideApp | Offer Ride</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+
+      <div class="logo">
+        RideApp
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="find.html">Find Ride</a>
+        <a href="profile.html">Profile</a>
+        <a href="support.html">Support</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <section class="offer-section">
+      <div class="container">
+
+        <h1>Offer a Ride</h1>
+        <p>Share your journey with others going the same way.</p>
+
+        <!-- OFFER FORM -->
+        <form id="offerForm" class="offer-form">
+
+          <!-- FROM -->
+          <div class="form-group">
+            <label for="from">From</label>
+            <input
+              type="text"
+              id="from"
+              name="from"
+              placeholder="Enter starting location"
+              required
+            />
+          </div>
+
+          <!-- TO -->
+          <div class="form-group">
+            <label for="to">To</label>
+            <input
+              type="text"
+              id="to"
+              name="to"
+              placeholder="Enter destination"
+              required
+            />
+          </div>
+
+          <!-- VEHICLE TYPE -->
+          <div class="form-group">
+            <label for="vehicle">Vehicle Type</label>
+            <select id="vehicle" name="vehicle" required>
+              <option value="">Select Vehicle</option>
+              <option value="Car">Car</option>
+              <option value="Bike">Bike</option>
+              <option value="Auto">Auto</option>
+              <option value="Truck">Truck</option>
+            </select>
+          </div>
+
+          <!-- SEATS -->
+          <div class="form-group">
+            <label for="seats">Available Seats</label>
+            <input
+              type="number"
+              id="seats"
+              name="seats"
+              min="1"
+              max="10"
+              placeholder="Enter number of seats"
+              required
+            />
+          </div>
+
+          <!-- PHONE -->
+          <div class="form-group">
+            <label for="phone">Contact Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter phone number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <!-- PRICE -->
+          <div class="form-group">
+            <label for="price">Price per Seat (Optional)</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Enter price (optional)"
+            />
+          </div>
+
+          <!-- SUBMIT -->
+          <button type="submit" class="btn btn-primary">
+            Post Ride
+          </button>
+
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="successMessage" class="success-message hidden">
+          Ride posted successfully!
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 RideApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="js/form.js"></script>
+
+</body>
+</html>
